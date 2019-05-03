@@ -1,0 +1,20 @@
+<p>
+  leftnav works!
+  {{successText}}
+  
+  
+ <input type="text" [(ngModel)] ="username" [disabled]="disabled">
+<input type="button" value="Click" (click)="getValue(username)" >
+  welcome {{"i am parent data"+parentData}}
+</p>
+<button (click)="senddata()" value="send parent">send parent</button>
+  <div *ngIf="isValid;else elsepart">
+    i am if condition
+  </div>
+
+  <ng-template #elsepart>
+
+  <h2>else statemt</h2>
+
+  </ng-template>
+ 
